@@ -314,20 +314,6 @@ This model is a custom implementation inspired by the classic LeNet architecture
     - Another Dense layer with  ** * units and ReLU activation 
     - Final Dense layer with softmax activation for classification into  * classes: "angry," "happy," "sad" 
 
-#### **Summary Table:**
-| Layer Type              | Output Shape  | Parameters  |
-|------------------------|----------------|--------------|
-| Conv *D + BatchNorm      | ( * * *,  * * *,  *) | * * * +  * *    |
-| MaxPooling *D + Dropout | (* * *, * * *,  *) |  *           |
-| Conv *D + BatchNorm      | (* * *, * * *, * *)|  * * * +  * *    |
-| MaxPooling *D           | ( * *,  * *, * *)  |  *           |
-| Flatten                | ( ** * * *)       |  *           |
-| Dense (* * * *)           | (* * * *)        |  * *, * **,* * *  |
-| BatchNorm + Dropout    | (* * * *)        |  *, * * *       |
-| Dense ( ** *)            | ( ** *)         |  * * *, * * *     |
-| BatchNorm              | ( ** *)         |  *, * * *       |
-| Dense ( * - softmax)    | ( *)           | *, * * *       |
-| **Total Parameters:**  | ** * *, ** *, * * ***|              |
 
 ---
 ### Model Architectures Overview: ResNet * *
@@ -456,17 +442,6 @@ resnet_ * *(tf zeros([*,  * * *,  * * *,  *]))
 resnet_ * * summary()
 ```
 
-**Output**:
-| Layer Type                 | Output Shape  | Parameters |
-|----------------------------|---------------|------------|
-| CustomConv *D               | ?             |  *, * * *      |
-| MaxPooling *D               | ?             |  *          |
-| ResidualBlock (x *)         | ?             |  * *, * * *     |
-| ResidualBlock (x *)         | ?             |  * **, * * *    |
-| ResidualBlock (x *)         | ?             |  *, * * *, ** *  |
-| GlobalAveragePooling *D     | ?             |  *          |
-| Dense                      | ?             | *, * * *      |
-| **Total Parameters**       | ** **, ***, * * ***|            |
 
 ---
 ![image](https://github.com/user-attachments/assets/73542207-a28a-44ea-8e74-934e94f66da4)
@@ -526,21 +501,6 @@ pretrained_model = tf keras Sequential([
 
 ---
 
-#### **Model Summary**
-The model's architecture can be summarized as:
-
-| Layer (type)                  | Output Shape      | Parameters   |
-|-------------------------------|-------------------|--------------|
-| EfficientNetB * (Functional)   | (None,  *,  *, * * * *) | * *, * * *, * * *   |
-| GlobalAveragePooling *D        | (None, * * * *)      |  *            |
-| Dense (* * * * units)            | (None, * * * *)      | *, * * *, * * *    |
-| BatchNormalization            | (None, * * * *)      |  *, * * *        |
-| Dense ( ** * units)             | (None,  ** *)       |  * * *, * * *      |
-| Dense (NUM_CLASSES)           | (None,  *)         | *, * * *        |
-
-**Total Parameters**:  * *, * * *, * * *  
-**Trainable Parameters**:  *, * * *, ** *  
-**Non-trainable Parameters**: * *, * * *, * **  
 
 ---
 
@@ -601,22 +561,7 @@ finetuned_model = Model(input, output)
 
 ---
 
-#### ** *  Model Summary**
-The fine-tuned model is summarized as follows:
 
-| Layer (type)                  | Output Shape      | Parameters   |
-|-------------------------------|-------------------|--------------|
-| InputLayer                    | (None,  * * *,  * * *,  *) |  *            |
-| EfficientNetB * (Functional)   | (None,  *,  *, * * * *)  | * *, * * *, * * *   |
-| GlobalAveragePooling *D        | (None, * * * *)      |  *            |
-| Dense (* * * * units)            | (None, * * * *)      | *, * * *, * * *    |
-| BatchNormalization            | (None, * * * *)      |  *, * * *        |
-| Dense ( ** * units)             | (None,  ** *)       |  * * *, * * *      |
-| Dense (NUM_CLASSES)           | (None,  *)         | *, * * *        |
-
-**Total Parameters**:  * *, * * *, * * *  
-**Trainable Parameters**: * *, ** *, * * *  
-**Non-trainable Parameters**: * * *, * * *  
 
 ---
 
@@ -684,19 +629,6 @@ vgg_backbone summary()
   - **Weights**: Set to `None`, indicating the model is not pretrained 
   - **Input Shape**: Configured to match the dataset's image dimensions 
 
-##### **Model Summary**:
-| Layer (type)                 | Output Shape         | Parameters   |
-|------------------------------|----------------------|--------------|
-| InputLayer                   | (None,  * * *,  * * *,  *) |  *            |
-| block*_conv* (Conv *D)        | (None,  * * *,  * * *,  * *) | *, * * *        |
-| block*_conv * (Conv *D)        | (None,  * * *,  * * *,  * *) |  * *, * * *       |
-| block*_pool (MaxPooling *D)   | (None, * * *, * * *,  * *) |  *            |
-| block *_conv* (Conv *D)        | (None, * * *, * * *, * * *)|  * *, * * *       |
-|                              |                      |              |
-| block *_pool (MaxPooling *D)   | (None,  *,  *,  ** *)    |  *            |
-
-**Total Parameters**: * *, ** *, * * *  
-**Trainable Parameters**: * *, ** *, * * *  
 
 ---
 
