@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7b03a40f-07a9-4eb8-a5d5-3a97a00ff75f)#  Emotion Detection Project
+Emotion Detection Project
 ## Disclaimer
 
 **Note:** The `main.ipynb` file preview on GitHub may not fully load or display all the content due to the size or complexity of the file. To view the complete code, please download the file and open it locally in a Jupyter Notebook environment. This will ensure you can access all the cells and outputs seamlessly.
@@ -6,19 +6,19 @@
 
 # Table of Sections
 
-| **Section** | **Description**                            |
-|-------------|--------------------------------------------|
+| **Section** | **Description**                             |
+|-------------|---------------------------------------------|
 |  1           | Project Configuration                      |
 |  2           | Dataset Loading and Preprocessing          |
 |  3           | TF=Records Implemetation                   |
 |  4           | Dataset Visualization                      |
 |  5           | Model Architectures Overview               |
 |  6           | LeNet Model                                |
-|  7           | ResNet * *                                   |
-|  8           | EfficientNetB *                             |
-|  9           | Fine-Tuned Pretrained Model EfficientNetB * |
-|  10          | VGG* *                                      |
-|  11         | Grad-CAM Model for Explainability          |
+|  7           | ResNet * *                                 |
+|  8           | EfficientNetB *                            |
+|  9           | Fine-Tuned Pretrained Model EfficientNetB  |
+|  10          | VGG* *                                     |
+|  11         | Grad-CAM Model for Explainability           |
 |  12          | Vision Transformer (ViT) Model From Scratch|
 |  13          | Vit Fine-tune                              |
 |  14          | ONNX Model Export                          |
