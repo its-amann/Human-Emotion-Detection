@@ -1,4 +1,4 @@
-#  Emotion Detection Project
+![image](https://github.com/user-attachments/assets/7b03a40f-07a9-4eb8-a5d5-3a97a00ff75f)#  Emotion Detection Project
 ## Disclaimer
 
 **Note:** The `main.ipynb` file preview on GitHub may not fully load or display all the content due to the size or complexity of the file. To view the complete code, please download the file and open it locally in a Jupyter Notebook environment. This will ensure you can access all the cells and outputs seamlessly.
@@ -107,7 +107,8 @@ validation_dataset = (
 
 ###    Creating Serialized TFRecord Examples
 A custom function, `create_example`, is implemented to serialize image-label pairs into a format compatible with TFRecords 
-![image](https://github com/user-attachments/assets/ *e * *c * *f-f *dd- *f *e-a*b *-f * *cf *ebcb* *)
+![image](https://github.com/user-attachments/assets/298ce961-99ce-4965-82e2-fbeaf3079de3)
+
 
 
 ```python
@@ -468,7 +469,8 @@ resnet_ * * summary()
 | **Total Parameters**       | ** **, ***, * * ***|            |
 
 ---
-![image](https://github com/user-attachments/assets/ * *** * * * *- *c * *- *e * *-b * *c-e * *db *d **f * *)
+![image](https://github.com/user-attachments/assets/73542207-a28a-44ea-8e74-934e94f66da4)
+
 
 ---
 ### Model Architectures Overview: Pretrained Model Using EfficientNetB *
@@ -554,7 +556,8 @@ metrics = [CategoricalAccuracy(name="accuracy")]
 
 ---
 
-![image](https://github com/user-attachments/assets/ * * * *c *ff- * * * *- * * *e-bc *f-c * * * * * * ** ** *)
+![image](https://github.com/user-attachments/assets/47fc208e-89f4-4eb3-a76a-970f11da5369)
+
 
 ### Model Architectures Overview: Fine-Tuned Pretrained Model Using EfficientNetB *
 
@@ -659,7 +662,8 @@ The training log shows the accuracy and loss over epochs:
 
 ---
 ## Results
-![image](https://github com/user-attachments/assets/ * *eeb *b*- * *b *- **b *-b *ae- *f *cfaaa * *b *)
+![image](https://github.com/user-attachments/assets/8908c9d8-b08a-4f1d-b1b2-0d306a0ee84e)
+
 
 ### VGG* * Model and Feature Map Visualization
 
@@ -746,6 +750,7 @@ f_maps = feature_map_model predict(im)
 
 #### ** *  Visualizing Feature Maps**
 Each feature map is visualized using `matplotlib` 
+![image](https://github.com/user-attachments/assets/e8a7fdce-db74-4843-8c24-b1c18ac6b1e7)
 
 ```python
 import matplotlib pyplot as plt
@@ -859,7 +864,8 @@ plt matshow(resized_heatmap + test_image[ *, :, :,  *] /  * * *)
 
 #### Step  *: Final Visualization
 - The overlayed heatmap visually highlights the regions most influential to the model's prediction, allowing interpretability of results  
-![image](https://github com/user-attachments/assets/c *c * * * **- * * *f- *d* *-af *f- *cef * * *b * * * *)
+![image](https://github.com/user-attachments/assets/16e79d44-84cb-40cd-a98c-a56472caca20)
+
 
 ---
 
@@ -923,7 +929,8 @@ class PatchEncoder(Layer):
 - **Purpose:** Converts image patches into feature embeddings 
 
 ---
-![image](https://github com/user-attachments/assets/f * * * *de *-f * * *- * *ff- * * *a-d * * * *afe * *e *)
+![image](https://github.com/user-attachments/assets/207b7659-5d39-40e3-9a43-1028684fd04e)
+
 
 ###  *  **Transformer Encoder Layer**
 
@@ -1332,23 +1339,20 @@ async def detect_emotion(im: UploadFile):
 ---
 # How to run 
 - Run the application using  this `uvicorn service main:app --reload` Command 
-- ![image](https://github com/user-attachments/assets/ * * *b * * *e- *c *d- *b * *- *cb *- * * * * *** * * *f*)
+- ![image](https://github.com/user-attachments/assets/b1500580-73b8-467e-90d6-522855521cad)
 - write `/docs` after the url
 - open up this page
-- ![image](https://github com/user-attachments/assets/dff *fec*- *bf*- * * *b- * *b *-* *c * * ** *e * * *)
+- ![image](https://github.com/user-attachments/assets/0129e8f1-b360-41b4-b0bf-f68f913acc00)
 -click on the post ` Up button `
-- ![image](https://github com/user-attachments/assets/a * *ba * * *-a *e *- *aae-bbb *- * **a * * * * *bee)
+- ![image](https://github.com/user-attachments/assets/1df68cd2-b639-4f0b-a4a5-54918b917ae1)
 - Click on `Try button ` on right 
 - Here input image
-- ![image](https://github com/user-attachments/assets/ac *f *a * *-* * * *- *f * *-acc *-a *db* * *b * * * *)
+- ![image](https://github.com/user-attachments/assets/d61ecb20-340c-4b79-ade7-4e80c7f7ed59)
 - Click on exceute
 - Hurray !! 🥳 got the result 
-- ![image](https://github com/user-attachments/assets/b*d * * * *b-fe * *- * *a *- *ce *- * * *f * * *cc * *d)
+- ![image](https://github.com/user-attachments/assets/7519021c-4798-47db-9988-72ae6c9bb320)
 - On image and It is actullay labelled as Sad in Dataset
-- ![image](https://github com/user-attachments/assets/ * * * * * * * *- *de *- * *cd-b *d *-afa *a * * * * *c *)
-
-
-
+- ![image](https://github.com/user-attachments/assets/262370bb-be2f-4c29-a09c-a18f258f0f27)
  
 ---
 
